@@ -1,4 +1,3 @@
-import { Flower2 } from "lucide-react";
 import { ButtonLink } from "../components/ButtonLink";
 import { SectionHeader } from "../components/SectionHeader";
 
@@ -54,8 +53,8 @@ export function AboutPage() {
             <h1>關於陳嘉堡老師</h1>
             <p>量子轉念引導技術系統創始人。</p>
           </div>
-          <div className="portrait-placeholder" aria-hidden="true">
-            <Flower2 size={98} strokeWidth={1} />
+          <div className="portrait-card portrait-card-hero">
+            <img src="/images/people/chen-chia-pao-cutout.png" alt="陳嘉堡老師" />
           </div>
         </div>
       </section>

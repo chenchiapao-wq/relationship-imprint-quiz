@@ -1,6 +1,5 @@
 import { Check, Flower2 } from "lucide-react";
 import { ButtonLink } from "../components/ButtonLink";
-import { DecorativeMark } from "../components/DecorativeMark";
 import { SectionHeader } from "../components/SectionHeader";
 import { contrastRows, painPoints, processSteps, typePreview } from "../data/siteContent";
 
@@ -20,7 +19,9 @@ export function HomePage() {
               <span>約 3 至 5 分鐘，找出你在關係中最容易被觸發的潛意識模式。</span>
             </div>
           </div>
-          <DecorativeMark />
+          <div className="hero-visual">
+            <img src="/images/hero/relationship-imprint-hero.jpg" alt="關係印記探索插畫" />
+          </div>
         </div>
       </section>
 
@@ -125,8 +126,8 @@ export function HomePage() {
 
       <section className="section-band split-band">
         <div className="container two-column founder-block">
-          <div className="portrait-placeholder" aria-hidden="true">
-            <Flower2 size={92} strokeWidth={1} />
+          <div className="portrait-card">
+            <img src="/images/people/chen-chia-pao-cutout.png" alt="陳嘉堡老師" loading="lazy" />
           </div>
           <div>
             <SectionHeader eyebrow="Creator" title="關於量子轉念引導技術" />
