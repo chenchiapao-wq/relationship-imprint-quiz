@@ -127,7 +127,7 @@ export function HomePage() {
       <section className="section-band split-band">
         <div className="container two-column founder-block">
           <div className="portrait-card">
-            <img src="/images/people/chen-chia-pao-cutout.png" alt="陳嘉堡老師" loading="lazy" />
+            <img src="/images/people/chen-chia-pao-white-half.png" alt="陳嘉堡老師" loading="lazy" />
           </div>
           <div>
             <SectionHeader eyebrow="Creator" title="關於量子轉念引導技術" />

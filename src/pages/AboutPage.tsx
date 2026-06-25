@@ -54,7 +54,7 @@ export function AboutPage() {
             <p>量子轉念引導技術系統創始人。</p>
           </div>
           <div className="portrait-card portrait-card-hero">
-            <img src="/images/people/chen-chia-pao-cutout.png" alt="陳嘉堡老師" />
+            <img src="/images/people/chen-chia-pao-yellow-half.png" alt="陳嘉堡老師" />
           </div>
         </div>
       </section>
