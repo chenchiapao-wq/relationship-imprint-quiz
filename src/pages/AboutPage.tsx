@@ -1,8 +1,48 @@
-import { BookOpen, Flower2 } from "lucide-react";
+import { Flower2 } from "lucide-react";
 import { ButtonLink } from "../components/ButtonLink";
 import { SectionHeader } from "../components/SectionHeader";
 
-const books = ["量子轉念的效應", "量子轉念的效應 2", "量子轉念的效應 3", "量子轉念的效應 4"];
+const books = [
+  {
+    title: "量子轉念的效應",
+    image: "/images/books/quantum-shift-effect-1.jpeg",
+    tagline: "逆轉生命印記，重返覺醒人生。",
+    description: [
+      "從想法、感受與情緒如何牽動生命狀態談起，帶領讀者回到內在印記的源頭。",
+      "轉念，不只是表面的正向思考，而是一條看見潛意識印記、重新理解生命經驗的重要路徑。",
+      "融合宗教、心理學與內在探索觀點，引導讀者回到更安定、更清明的內在位置。"
+    ]
+  },
+  {
+    title: "量子轉念的效應 2",
+    image: "/images/books/quantum-shift-effect-2.jpeg",
+    tagline: "翱翔於量子心靈、多維時空、全息意識場。",
+    description: [
+      "以意識為核心，延伸探討量子心靈、多維時空與全息意識場的內在探索觀點。",
+      "書中提醒讀者：「轉念」不只是換個想法，而是透過信念鬆動與重新領悟，改變自己理解過去、面對現在與選擇未來的方式。"
+    ]
+  },
+  {
+    title: "量子轉念的效應 3",
+    image: "/images/books/quantum-shift-effect-3.jpeg",
+    tagline: "啟動高維意識量子場。",
+    description: [
+      "「知道了」不等於「經驗到了」。",
+      "當一個人願意從更高層次理解自己的思惟與信念，才有機會重新校準正在創造的人生實相。",
+      "本書為《啟動高維意識量子場》（2021 年）之修訂改版。"
+    ]
+  },
+  {
+    title: "量子轉念的效應 4",
+    image: "/images/books/quantum-shift-effect-4.jpeg",
+    tagline: "穿越前世印記輪迴，開啟靈魂覺醒新維度。",
+    description: [
+      "收錄 15 則真實個案故事：透過潛意識回溯的引導過程，理解情感困境、身體感受、人際衝突背後可能存在的印記。",
+      "解答 17 個常見的靈性問題：回應「命運是決定好的嗎？」、「每個人都能看到前世嗎？」、「為什麼總是吸引爛人？」等疑惑。",
+      "完整呈現「量子轉念引導技術」實作邏輯：以清晰步驟與實作案例，說明這套技術如何協助人看見內在模式。"
+    ]
+  }
+];
 
 export function AboutPage() {
   return (
@@ -45,10 +85,18 @@ export function AboutPage() {
           <SectionHeader eyebrow="Books" title="著作與專業成果" align="center" />
           <div className="book-grid">
             {books.map((book) => (
-              <article className="book-card" key={book}>
-                <BookOpen size={24} strokeWidth={1.5} aria-hidden="true" />
-                <h3>{book}</h3>
-                <p>從潛意識印記、轉念歷程與生命案例中，理解人如何重新拿回選擇權。</p>
+              <article className="book-card" key={book.title}>
+                <div className="book-cover-frame">
+                  <img src={book.image} alt={`《${book.title}》書封`} loading="lazy" />
+                </div>
+                <div className="book-copy">
+                  <p className="book-kicker">陳嘉堡 著</p>
+                  <h3>《{book.title}》</h3>
+                  <p className="book-tagline">{book.tagline}</p>
+                  {book.description.map((paragraph) => (
+                    <p key={paragraph}>{paragraph}</p>
+                  ))}
+                </div>
               </article>
             ))}
           </div>

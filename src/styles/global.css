@@ -691,15 +691,55 @@ blockquote {
 
 .book-grid {
   margin-top: 2rem;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  align-items: stretch;
 }
 
 .book-card {
-  padding: 1.2rem;
+  display: grid;
+  grid-template-rows: auto 1fr;
+  padding: 0;
+  overflow: hidden;
 }
 
-.book-card svg {
+.book-cover-frame {
+  display: grid;
+  place-items: center;
+  min-height: 360px;
+  padding: 1.2rem;
+  background:
+    linear-gradient(145deg, rgba(26, 22, 34, 0.95), rgba(77, 63, 105, 0.88)),
+    linear-gradient(32deg, rgba(158, 229, 235, 0.18), rgba(255, 255, 255, 0));
+}
+
+.book-cover-frame img {
+  display: block;
+  width: auto;
+  max-width: 100%;
+  max-height: 330px;
+  object-fit: contain;
+  filter: drop-shadow(0 20px 28px rgba(22, 18, 31, 0.28));
+}
+
+.book-copy {
+  padding: 1.35rem;
+}
+
+.book-kicker {
+  margin: 0 0 0.35rem;
   color: var(--red);
+  font-size: 0.78rem;
+  font-weight: 700;
+}
+
+.book-copy h3 {
+  color: var(--red);
+  font-size: 1.2rem;
+}
+
+.book-tagline {
+  color: var(--ink);
+  font-weight: 700;
 }
 
 .quiz-page {
@@ -1011,6 +1051,14 @@ blockquote {
 
   .portrait-placeholder {
     min-height: 240px;
+  }
+
+  .book-cover-frame {
+    min-height: 300px;
+  }
+
+  .book-cover-frame img {
+    max-height: 270px;
   }
 }
 
