@@ -5,17 +5,17 @@ import { SectionHeader } from "../components/SectionHeader";
 const books = [
   {
     title: "量子轉念的效應",
-    image: "/images/books/quantum-shift-effect-1.jpeg",
+    image: "/images/books/quantum-shift-effect-1.png",
     tagline: "逆轉生命印記，重返覺醒人生。",
     description: [
       "從想法、感受與情緒如何牽動生命狀態談起，帶領讀者回到內在印記的源頭。",
       "轉念，不只是表面的正向思考，而是一條看見潛意識印記、重新理解生命經驗的重要路徑。",
-      "融合宗教、心理學與內在探索觀點，引導讀者回到更安定、更清明的內在位置。"
+      "跨越宗教、心理學與內在探索觀點，引導讀者回到更安定、更清明的內在位置。"
     ]
   },
   {
     title: "量子轉念的效應 2",
-    image: "/images/books/quantum-shift-effect-2.jpeg",
+    image: "/images/books/quantum-shift-effect-2.png",
     tagline: "翱翔於量子心靈、多維時空、全息意識場。",
     description: [
       "以意識為核心，延伸探討量子心靈、多維時空與全息意識場的內在探索觀點。",
@@ -24,7 +24,7 @@ const books = [
   },
   {
     title: "量子轉念的效應 3",
-    image: "/images/books/quantum-shift-effect-3.jpeg",
+    image: "/images/books/quantum-shift-effect-3.png",
     tagline: "啟動高維意識量子場。",
     description: [
       "「知道了」不等於「經驗到了」。",
@@ -34,7 +34,7 @@ const books = [
   },
   {
     title: "量子轉念的效應 4",
-    image: "/images/books/quantum-shift-effect-4.jpeg",
+    image: "/images/books/quantum-shift-effect-4.png",
     tagline: "穿越前世印記輪迴，開啟靈魂覺醒新維度。",
     description: [
       "收錄 15 則真實個案故事：透過潛意識回溯的引導過程，理解情感困境、身體感受、人際衝突背後可能存在的印記。",
