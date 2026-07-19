@@ -11,7 +11,7 @@ export function Layout() {
     <div className="app-shell">
       <header className="site-header">
         <Link className="brand" to="/" onClick={() => setIsOpen(false)}>
-          <span className="brand-icon" aria-hidden="true">花</span>
+          <span className="brand-icon" aria-hidden="true">量</span>
           <span>量子轉念</span>
         </Link>
 
@@ -49,7 +49,7 @@ export function Layout() {
         <div className="footer-inner">
           <div>
             <Link className="footer-brand" to="/">
-              <span className="brand-icon light" aria-hidden="true">花</span>
+              <span className="brand-icon light" aria-hidden="true">量</span>
               <span>量子轉念</span>
             </Link>
             <p>看見潛意識印記，重新拿回生命的選擇權。</p>
