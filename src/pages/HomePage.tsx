@@ -20,7 +20,7 @@ export function HomePage() {
             </div>
           </div>
           <div className="hero-visual">
-            <img src="/images/hero/relationship-imprint-hero.jpg" alt="關係印記探索插畫" />
+            <img src="/images/hero/relationship-imprint-window-hero.jpg" alt="關係印記探索插畫" />
           </div>
         </div>
       </section>
